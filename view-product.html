@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Dashboard</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!-- top navbar -->
+    <nav class="top-navbar bg-black text-white py-1">
+      <div
+        class="navbar-wrapper d-flex justify-content-between align-items-center"
+      >
+        <ul class="left-navbar-link d-flex align-items-center">
+          <li>
+            <i class="fa fa-bars" id="hambuger-icon"></i>
+          </li>
+          <li>
+            <h2>
+              <a href="./index.html" class="navbar-brand text-white" href=""
+                ><i class="fa fa-tachometer-alt d-none"></i>Dashboard</a
+              >
+            </h2>
+          </li>
+        </ul>
+        <ul class="right-navbar-link d-flex align-items-center">
+          <li class="text-grey">
+            <span class="notification-icon-wrapper">
+              <i class="fa fa-bell"></i> <span class="notification-alert"></span
+            ></span>
+            <span class="d-none d-md-none"
+              >Notification <i class="fa fa-caret-down"></i
+            ></span>
+            <ul>
+              <li class="text-center">3 new notifications</li>
+              <li>
+                <a href=""><i class="fa fa-user"></i> You have a new user</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="text-grey">
+            <i class="fa fa-cog"></i>
+            <span class="d-none d-md-none"
+              >Settings <i class="fa fa-caret-down"></i
+            ></span>
+          </li>
+          <li>
+            <div class="profile-wrapper d-flex align-items-center text-grey">
+              <div class="profile-pic-wrapper">
+                <img src="./img/profile5.jpg" alt="" width="50" />
+              </div>
+              <span class="pl-1 d-none"
+                ><p>Administrator</p>
+                Abdul-Rauf Alhassan <i class="fa fa-caret-down"></i
+              ></span>
+            </div>
+            <ul>
+              <li>
+                <a href="./profile.html"><i class="fa fa-user"></i> Profile</a>
+              </li>
+              <li>
+                <a href="./login.html"
+                  ><i class="fa fa-sign-out-alt"></i> Sign out</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end top navbar -->
+    <!-- aside navbar -->
+    <nav class="aside-navbar">
+      <ul>
+        <li>
+          <a
+            class="d-flex justify-content-between text-grey active"
+            href="./index.html"
+            ><span><i class="fa fa-tachometer-alt"></i> Dashboard</span>
+            <i class="fa fa-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./analytics.html"
+            ><span class="d-flex justify-content-between"
+              ><span><i class="fa fa-chart-line"></i> Analytics</span>
+              <i class="fa fa-chevron-right"></i></span
+          ></a>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-store"></i> Product</span>
+            <i class="fa fa-chevron-down"></i
+          ></span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./products.html">
+                <i class="fa fa-caret-right"></i> View Products</a
+              >
+            </li>
+            <li>
+              <a href="./add-product.html">
+                <i class="fa fa-caret-right"></i> Add Product</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-motorcycle"></i> Orders</span>
+            <i class="fa fa-chevron-down"></i>
+          </span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./orders.html">
+                <i class="fa fa-caret-right"></i> View Orders</a
+              >
+            </li>
+            <li>
+              <a href="./orders.html">
+                <i class="fa fa-caret-right"></i> Add Orders</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-users"></i> Users</span>
+            <i class="fa fa-chevron-down"></i
+          ></span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./users.html">
+                <i class="fa fa-caret-right"></i> View Users</a
+              >
+            </li>
+            <li>
+              <a href="./users.html">
+                <i class="fa fa-caret-right"></i> Add Users</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="./profile.html"
+            class="d-flex justify-content-between text-grey"
+            href=""
+            ><span><i class="fa fa-user"></i> Profile</span>
+            <i class="fa fa-chevron-right"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end aside navbar -->
+    <!-- main-main -->
+    <main class="main-main">
+      <!-- relative path -->
+      <div class="card mb-1">
+        <h2 class="mb-1"><i class="fa fa-eye"></i> View Product</h2>
+        <h4>
+          <a class="path" href="./index.html"
+            ><i class="fa fa-home"></i>Dasboard</a
+          >
+          <a href="./products.html" class="text-grey path">/Products</a>
+
+          <a href="./products.html" class="text-grey path-active"
+            >/ View Product</a
+          >
+        </h4>
+      </div>
+      <!-- end relative path -->
+      <!-- product-detail -->
+      <section id="view-product" class="product-details card mb-1">
+        <div>
+          <img src="./img/product-1.png" alt="" />
+        </div>
+        <div>
+          <h1 class="mb-1">Product Details</h1>
+          <h4><span class="text-grey">Name</span>: Samsang Grand plus</h4>
+          <h4><span class="text-grey">Company</span>: Samsung</h4>
+          <h4><span class="text-grey">Category</span>: Phones</h4>
+          <h4>
+            <span class="text-grey">Total Quatity</span>:
+            <span class="text-green">300</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Quatity Avialable</span>:
+            <span class="text-green">200</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Quatity Sold</span>:
+            <span class="text-green">90</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Quatity Returned</span>:
+            <span class="text-red">10</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Profit</span>:
+            <span class="text-green">$10000</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Loss</span>:
+            <span class="text-red">-$1000</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Price</span>:
+            <span class="text-green">$300</span>
+          </h4>
+          <h4>
+            <span class="text-grey"> Views <i class="fa fa-eye"></i></span>:
+            4,6667
+          </h4>
+          <h4>
+            <span class="text-grey">Comment <i class="fa fa-comment"></i> </span
+            >: 1,900
+          </h4>
+          <h4>
+            <span class="text-grey"
+              >Ratings <i class="fa fa-star text-gold"></i> </span
+            >:
+            <span class="text-green">4.5</span>
+          </h4>
+          <h4>
+            <span class="text-grey">Details</span>: Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Corporis accusamus dolore expedita
+            possimus! Blanditiis eveniet quo dolor quae veritatis? Debitis odio
+            labore soluta nemo nulla vel voluptate commodi quo quis deleniti
+            harum delectus vitae esse maiores dolorum
+            <br />
+            <button class="btn btn-blue">
+              See More <i class="fa fa-caret-down"></i>
+            </button>
+          </h4>
+          <h4><span class="text-grey">Date Added</span>: 21/11/1999</h4>
+          <h4><span class="text-grey">Author</span>: Abdul-Rauf Alhassan</h4>
+        </div>
+      </section>
+      <!-- product-detail -->
+      <!-- footer -->
+      <footer>
+        <p class="text-grey pt-1">
+          Copyright &copy; 2020, All Rights Reservered By Bonify Tech
+        </p>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <!-- end main-main -->
+  <script src="js/bundle.js"></script></body>
+</html>

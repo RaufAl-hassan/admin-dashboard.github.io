@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Dashboard</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!-- top navbar -->
+    <nav class="top-navbar bg-black text-white py-1">
+      <div
+        class="navbar-wrapper d-flex justify-content-between align-items-center"
+      >
+        <ul class="left-navbar-link d-flex align-items-center">
+          <li>
+            <i class="fa fa-bars" id="hambuger-icon"></i>
+          </li>
+          <li>
+            <h2>
+              <a href="./index.html" class="navbar-brand text-white" href=""
+                ><i class="fa fa-tachometer-alt d-none"></i>Dashboard</a
+              >
+            </h2>
+          </li>
+        </ul>
+        <ul class="right-navbar-link d-flex align-items-center">
+          <li class="text-grey">
+            <span class="notification-icon-wrapper">
+              <i class="fa fa-bell"></i> <span class="notification-alert"></span
+            ></span>
+            <span class="d-none d-md-none"
+              >Notification <i class="fa fa-caret-down"></i
+            ></span>
+            <ul>
+              <li class="text-center">3 new notifications</li>
+              <li>
+                <a href=""><i class="fa fa-user"></i> You have a new user</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="text-grey">
+            <i class="fa fa-cog"></i>
+            <span class="d-none d-md-none"
+              >Settings <i class="fa fa-caret-down"></i
+            ></span>
+          </li>
+          <li>
+            <div class="profile-wrapper d-flex align-items-center text-grey">
+              <div class="profile-pic-wrapper">
+                <img src="./img/profile5.jpg" alt="" width="50" />
+              </div>
+              <span class="pl-1 d-none"
+                ><p>Administrator</p>
+                Abdul-Rauf Alhassan <i class="fa fa-caret-down"></i
+              ></span>
+            </div>
+            <ul>
+              <li>
+                <a href="./profile.html"><i class="fa fa-user"></i> Profile</a>
+              </li>
+              <li>
+                <a href="./login.html"
+                  ><i class="fa fa-sign-out-alt"></i> Sign out</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end top navbar -->
+    <!-- aside navbar -->
+    <nav class="aside-navbar">
+      <ul>
+        <li>
+          <a
+            class="d-flex justify-content-between text-grey active"
+            href="./index.html"
+            ><span><i class="fa fa-tachometer-alt"></i> Dashboard</span>
+            <i class="fa fa-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./analytics.html"
+            ><span class="d-flex justify-content-between"
+              ><span><i class="fa fa-chart-line"></i> Analytics</span>
+              <i class="fa fa-chevron-right"></i></span
+          ></a>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-store"></i> Product</span>
+            <i class="fa fa-chevron-down"></i
+          ></span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./products.html">
+                <i class="fa fa-caret-right"></i> View Products</a
+              >
+            </li>
+            <li>
+              <a href="./add-product.html">
+                <i class="fa fa-caret-right"></i> Add Product</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-motorcycle"></i> Orders</span>
+            <i class="fa fa-chevron-down"></i>
+          </span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./orders.html">
+                <i class="fa fa-caret-right"></i> View Orders</a
+              >
+            </li>
+            <li>
+              <a href="./orders.html">
+                <i class="fa fa-caret-right"></i> Add Orders</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-users"></i> Users</span>
+            <i class="fa fa-chevron-down"></i
+          ></span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./users.html">
+                <i class="fa fa-caret-right"></i> View Users</a
+              >
+            </li>
+            <li>
+              <a href="./users.html">
+                <i class="fa fa-caret-right"></i> Add Users</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="./profile.html"
+            class="d-flex justify-content-between text-grey"
+            href=""
+            ><span><i class="fa fa-user"></i> Profile</span>
+            <i class="fa fa-chevron-right"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end aside navbar -->
+    <!-- main-main -->
+    <main class="main-main">
+      <!-- relative path -->
+      <div class="card mb-1">
+        <h2 class="mb-1"><i class="fa fa-user-edit"></i> Edit Profile</h2>
+        <h4>
+          <a class="path" href="./index.html"
+            ><i class="fa fa-home"></i>Dasboard</a
+          >
+          <a href="./profile.html" class="path">/Profile</a>
+          <a href="./profile.html" class="path-active">/Edit Profile</a>
+        </h4>
+      </div>
+      <!-- end relative path -->
+      <!-- edit profile -->
+      <section id="edit-profile" class="card">
+        <h3 class="mb-1"><i class="fa fa-edit"></i> Edit Form Details</h3>
+        <form class="mb-1" action="">
+          <div class="d-flex justify-content-between flex-direction-sm-column">
+            <div class="form-group">
+              <label for="firstName">First Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id=""
+                value="Abdul-Rauf"
+                placeholder="Enter First Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="middleName">Middle Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id=""
+                value=""
+                placeholder="Enter Middle Name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lastName">Last Name</label>
+              <input
+                class="form-control"
+                type="text"
+                id=""
+                value="Alhassan"
+                placeholder="Enter Last Name"
+              />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input
+              type="text"
+              class="form-control"
+              value="Adul-Rauf Alhassan"
+              placeholder="Enter username"
+            />
+          </div>
+          <div class="d-flex justify-content-between flex-direction-sm-column">
+            <div class="form-group">
+              <label for="birthDate">Date Of Birth</label>
+              <input
+                type="date"
+                name=""
+                class="form-control"
+                value="1998-01-08"
+              />
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input
+                type="number"
+                name=""
+                class="form-control"
+                value="22"
+                placeholder="Enter Age"
+              />
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select name="gender" class="form-control">
+                <option value="male" selected>Male</option>
+                <option value="female">Female</option>
+              </select>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between flex-direction-sm-column">
+            <div class="form-group">
+              <label for="email">E-mail</label>
+              <input
+                type="email"
+                class="form-control"
+                value="rauf@gmail.com"
+                placeholder="Enter Email eg; 'example@gmail.com'"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input
+                type="tel"
+                class="form-control"
+                value="+233550123236"
+                placeholder="Enter Phone Number"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Address</label>
+            <textarea class="form-control" rows="5">
+Ghana-Accra
+Ashongman-Estate
+            </textarea>
+          </div>
+          <div class="form-group">
+            <label for="passeod">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              value="password"
+              placeholder="Enter Email eg; 'example@gmail.com'"
+            />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-green" type="submit" value="save">
+              <i class="fa fa-save"></i> Save
+            </button>
+            <button class="btn btn-blue">
+              <i class="fa fa-trash"></i> Discard
+            </button>
+          </div>
+        </form>
+        <h3 class="mb-1"><i class="fa fa-user-lock"></i> Change Password</h3>
+        <form action="">
+          <div class="form-group">
+            <label for="oldPassword">Old Password</label>
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Enter Old Password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="newPassword">New Password</label>
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Enter New Password"
+            />
+          </div>
+          <div class="form-group">
+            <label for="reapeatNewPassword">Repeat New Password</label>
+            <input
+              class="form-control"
+              type="password"
+              placeholder="Reapeat New Password"
+            />
+          </div>
+          <div class="form-group">
+            <button class="btn btn-green" type="submit" value="save">
+              <i class="fa fa-lock"></i> Change Password
+            </button>
+            <button class="btn btn-blue">
+              <i class="fa fa-trash"></i> Discard
+            </button>
+          </div>
+        </form>
+      </section>
+      <!-- end edit profile -->
+      <!-- footer -->
+      <footer>
+        <p class="text-grey pt-1">
+          Copyright &copy; 2020, All Rights Reservered By Bonify Tech
+        </p>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <!-- end main-main -->
+  <script src="js/bundle.js"></script></body>
+</html>

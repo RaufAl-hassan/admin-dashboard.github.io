@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Dashboard</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    /> -->
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/app.css" />
+  </head>
+  <body>
+    <!-- top navbar -->
+    <nav class="top-navbar bg-black text-white py-1">
+      <div
+        class="navbar-wrapper d-flex justify-content-between align-items-center"
+      >
+        <ul class="left-navbar-link d-flex align-items-center">
+          <li>
+            <i class="fa fa-bars" id="hambuger-icon"></i>
+          </li>
+          <li>
+            <h2>
+              <a href="./index.html" class="navbar-brand text-white" href=""
+                ><i class="fa fa-tachometer-alt d-none"></i>Dashboard</a
+              >
+            </h2>
+          </li>
+        </ul>
+        <ul class="right-navbar-link d-flex align-items-center">
+          <li class="text-grey">
+            <span class="notification-icon-wrapper">
+              <i class="fa fa-bell"></i> <span class="notification-alert"></span
+            ></span>
+            <span class="d-none d-md-none"
+              >Notification <i class="fa fa-caret-down"></i
+            ></span>
+            <ul>
+              <li class="text-center">3 new notifications</li>
+              <li>
+                <a href=""><i class="fa fa-user"></i> You have a new user</a>
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-motorcycle"></i> You have a new user</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="text-grey">
+            <i class="fa fa-cog"></i>
+            <span class="d-none d-md-none"
+              >Settings <i class="fa fa-caret-down"></i
+            ></span>
+          </li>
+          <li>
+            <div class="profile-wrapper d-flex align-items-center text-grey">
+              <div class="profile-pic-wrapper">
+                <img src="./img/profile5.jpg" alt="" width="50" />
+              </div>
+              <span class="pl-1 d-none"
+                ><p>Administrator</p>
+                Abdul-Rauf Alhassan <i class="fa fa-caret-down"></i
+              ></span>
+            </div>
+            <ul>
+              <li>
+                <a href="./profile.html"><i class="fa fa-user"></i> Profile</a>
+              </li>
+              <li>
+                <a href="./login.html"
+                  ><i class="fa fa-sign-out-alt"></i> Sign out</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- end top navbar -->
+    <!-- aside navbar -->
+    <nav class="aside-navbar">
+      <ul>
+        <li>
+          <a
+            class="d-flex justify-content-between text-grey active"
+            href="./index.html"
+            ><span><i class="fa fa-tachometer-alt"></i> Dashboard</span>
+            <i class="fa fa-chevron-right"></i
+          ></a>
+        </li>
+        <li>
+          <a href="./analytics.html"
+            ><span class="d-flex justify-content-between"
+              ><span><i class="fa fa-chart-line"></i> Analytics</span>
+              <i class="fa fa-chevron-right"></i></span
+          ></a>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-store"></i> Product</span>
+            <i class="fa fa-chevron-down"></i
+          ></span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./products.html">
+                <i class="fa fa-caret-right"></i> View Products</a
+              >
+            </li>
+            <li>
+              <a href="./add-product.html">
+                <i class="fa fa-caret-right"></i> Add Product</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-motorcycle"></i> Orders</span>
+            <i class="fa fa-chevron-down"></i>
+          </span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./orders.html">
+                <i class="fa fa-caret-right"></i> View Orders</a
+              >
+            </li>
+            <li>
+              <a href="./orders.html">
+                <i class="fa fa-caret-right"></i> Add Orders</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li class="aside-navbar-sub-links-wrapper">
+          <span class="d-flex justify-content-between">
+            <span><i class="fa fa-users"></i> Users</span>
+            <i class="fa fa-chevron-down"></i
+          ></span>
+          <ul class="aside-navbar-sub-links">
+            <li>
+              <a href="./users.html">
+                <i class="fa fa-caret-right"></i> View Users</a
+              >
+            </li>
+            <li>
+              <a href="./users.html">
+                <i class="fa fa-caret-right"></i> Add Users</a
+              >
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a
+            href="./profile.html"
+            class="d-flex justify-content-between text-grey"
+            href=""
+            ><span><i class="fa fa-user"></i> Profile</span>
+            <i class="fa fa-chevron-right"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- end aside navbar -->
+    <!-- main-main -->
+    <main class="main-main">
+      <div class="card mb-1 d-flex justify-content-between">
+        <span>
+          <h3 class="mb-1">Welcome Back Rauf,</h3>
+          <a href="./index.html" class="text-grey"
+            ><i class="fa fa-home"></i>Dasboard/</a
+          >
+        </span>
+        <span class="text-grey d-none">
+          <h4>Sunday, October 18, 2020</h4>
+        </span>
+      </div>
+      <!-- our-store-details -->
+      <section class="our-store-details mb-1">
+        <article class="card">
+          <a href="">
+            <h3 class="d-flex justify-content-between">
+              <span><i class="fa fa-dollar-sign fa-2x"></i> Total Revenue</span>
+              <span class="text-green"><i class="fa fa-arrow-up"></i>5%</span>
+            </h3>
+            <p>$ 100B</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="">
+            <h3 class="d-flex justify-content-between">
+              <span><i class="fa fa-store fa-2x"></i> Products</span>
+              <span class="text-green"><i class="fa fa-arrow-up"></i>1K+</span>
+            </h3>
+            <p>20M+</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="">
+            <h3 class="d-flex justify-content-between">
+              <span><i class="fa fa-motorcycle fa-2x"></i> Orders</span>
+              <span class="text-red"><i class="fa fa-arrow-down"></i>-1%</span>
+            </h3>
+            <p>20M+</p>
+          </a>
+        </article>
+        <article class="card">
+          <a href="">
+            <h3 class="d-flex justify-content-between">
+              <span><i class="fa fa-users fa-2x"></i> Users</span>
+              <span class="text-green"><i class="fa fa-arrow-up"></i>5%</span>
+            </h3>
+            <p>20M+</p>
+          </a>
+        </article>
+      </section>
+      <!-- end our-store-details -->
+      <!-- new activities section -->
+      <section class="new-activities-wrapper">
+        <!-- new orders -->
+        <article class="card">
+          <div class="mb-1 d-flex justify-content-between align-items-center">
+            <h3><i class="fa fa-motorcycle"></i> New Orders</h3>
+            <a href="" class="btn btn-primary"
+              >See All <i class="fa fa-arrow-right text-grey"></i
+            ></a>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Item</th>
+                  <th>Amount</th>
+                  <th>Confirm</th>
+                  <th>Reject</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Iphone 11 pro</a></td>
+                  <td><a href="">$200</a></td>
+                  <td>
+                    <i class="fa fa-check text-green"></i>
+                  </td>
+                  <td>
+                    <i class="fa fa-times text-red"></i>
+                  </td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <!-- end new orders  -->
+        <!-- new products-->
+        <article class="card">
+          <div class="mb-1 d-flex justify-content-between align-items-center">
+            <h3><i class="fa fa-store"></i> Recently Added Products</h3>
+            <a href="" class="btn btn-primary"
+              >See All <i class="fa fa-arrow-right text-grey"></i
+            ></a>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Product</th>
+                  <th>Name</th>
+                  <th>Price</th>
+                  <th>Author</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href=""><img src="./img/product-1.png" alt="" /></a>
+                  </td>
+                  <td><a href="">Google Pexel</a></td>
+                  <td><a href="">$70</a></td>
+                  <td><a href="">Abdul-Rauf...</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""><img src="./img/product-2.png" alt="" /></a>
+                  </td>
+                  <td><a href="">Samsung Grand...</a></td>
+                  <td><a href="">$70</a></td>
+                  <td><a href="">Abdul-Rauf...</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""><img src="./img/product-3.png" alt="" /></a>
+                  </td>
+                  <td><a href="">Samsung Grand...</a></td>
+                  <td><a href="">$70</a></td>
+                  <td><a href="">Abdul-Rauf...</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""><img src="./img/product-4.png" alt="" /></a>
+                  </td>
+                  <td><a href="">Samsung Grand...</a></td>
+                  <td><a href="">$70</a></td>
+                  <td><a href="">Abdul-Rauf...</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""><img src="./img/product-5.png" alt="" /></a>
+                  </td>
+                  <td><a href="">HTC 455</a></td>
+                  <td><a href="">$70</a></td>
+                  <td><a href="">Abdul-Rauf...</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <!-- end new products-->
+        <!-- task manager -->
+        <article class="card">
+          <div class="mb-1 d-flex justify-content-between align-items-center">
+            <h3><i class="fa fa-tasks"></i> Task Manager</h3>
+            <a href="" class="btn btn-primary"
+              >See All <i class="fa fa-arrow-right text-grey"></i
+            ></a>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Progress</th>
+                  <th>status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td>
+                    <a href=""><div class="progress-bar progress-25"></div></a>
+                  </td>
+                  <td><a href="">25%</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td>
+                    <a href=""><div class="progress-bar progress-50"></div></a>
+                  </td>
+                  <td><a href="">50%</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td>
+                    <a href=""><div class="progress-bar progress-75"></div></a>
+                  </td>
+                  <td><a href="">75%</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td>
+                    <a href=""><div class="progress-bar progress-100"></div></a>
+                  </td>
+                  <td><a href="">100%</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td>
+                    <a href=""><div class="progress-bar progress-100"></div></a>
+                  </td>
+                  <td><a href="">100%</a></td>
+                </tr>
+                <tr>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td><a href="">Pay The Bill</a></td>
+                  <td>
+                    <a href=""><div class="progress-bar progress-100"></div></a>
+                  </td>
+                  <td><a href="">100%</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <!-- end task manager -->
+        <!-- new users -->
+        <article class="card new-users">
+          <div class="mb-1 d-flex justify-content-between align-items-center">
+            <h3><i class="fa fa-users"> </i> New Users</h3>
+            <a href="" class="btn btn-primary"
+              >See All <i class="fa fa-arrow-right text-grey"></i
+            ></a>
+          </div>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Profile</th>
+                  <th>Name</th>
+                  <th>Email</th>
+                  <th>Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <a href=""
+                      ><img loading="lazy" src="./img/profile1.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="">Abdul Rauf ...</a></td>
+                  <td><a href="">Rauf@gmail.com</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr></tr>
+                <tr>
+                  <td>
+                    <a href=""
+                      ><img loading="lazy" src="./img/profile1.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="">Abdul Rauf ...</a></td>
+                  <td><a href="">Rauf@gmail.com</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""
+                      ><img loading="lazy" src="./img/profile2.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="">Abdul Rauf ...</a></td>
+                  <td><a href="">Rauf@gmail.com</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""
+                      ><img loading="lazy" src="./img/profile.png" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="">Abdul Rauf ...</a></td>
+                  <td><a href="">Rauf@gmail.com</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+                <tr>
+                  <td>
+                    <a href=""
+                      ><img loading="lazy" src="./img/profile3.jpg" alt=""
+                    /></a>
+                  </td>
+                  <td><a href="">Abdul Rauf ...</a></td>
+                  <td><a href="">Rauf@gmail.com</a></td>
+                  <td><a href="">Just now</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+        <!-- end new users -->
+      </section>
+      <!-- end new activities section -->
+      <!-- footer -->
+      <footer>
+        <p class="text-grey pt-1">
+          Copyright &copy; 2020, All Rights Reservered By Bonify Tech
+        </p>
+      </footer>
+      <!-- end footer -->
+    </main>
+    <!-- end main-main -->
+  <script src="js/bundle.js"></script></body>
+</html>
